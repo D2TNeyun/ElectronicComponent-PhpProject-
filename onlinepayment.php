@@ -119,7 +119,7 @@ if ($result->num_rows > 0) {
                         <tr>
                             <td>Phương thức thanh toán <br>
                                 <!-- <input type="radio" name="pttt" value="1" checked> Thanh toán khi nhận hàng <br> -->
-                                <input type="radio" name="pttt" value="2" checked> Thanh toán qua thẻ ATM <br>
+                                <input type="radio" name="pttt" value="2" checked> Thanh toán qua thẻ ATM MOMO <br>
                             </td>
                         </tr>
 

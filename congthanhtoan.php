@@ -30,7 +30,7 @@ $endpoint = "https://test-payment.momo.vn/v2/gateway/api/create";
 $partnerCode = 'MOMOBKUN20180529';
 $accessKey = 'klm05TvNBzhg7h7j';
 $secretKey = 'at67qH6mk8w5Y1nAyMoYKMWACiEi2bsa'; 
-$orderInfo = "Thanh toan qua MoMo";
+$orderInfo = "Thanh toan atm momo";
 
 $queries = array();
 parse_str($_SERVER['QUERY_STRING'], $queries);

@@ -35,8 +35,8 @@ if (isset($_POST['stusignup']) && isset($_POST['hoten']) && isset($_POST['sodien
         }
     }
 
-    $sql = "UPDATE diachi SET dc_hoten= '$hoten', dc_sdt= '$sodienthoai', dc_sonha= '$sonha', dc_thanhpho= '$thanhpho', dc_tinh= '$tinh', dc_xa= '$huyen' WHERE dc_id = '$dc_id'";
-    
+    // $sql = "UPDATE diachi SET dc_hoten= '$hoten', dc_sdt= '$sodienthoai', dc_sonha= '$sonha', dc_thanhpho= '$thanhpho', dc_tinh= '$tinh', dc_xa= '$huyen' WHERE dc_id = '$dc_id'";
+    $sql = "UPDATE diachi SET dc_hoten= '$hoten', dc_sdt= '$sodienthoai', dc_sonha= '$sonha', dc_thanhpho= '$thanhpho', dc_tinh= '$tinh', dc_huyen= '$huyen' WHERE dc_id = '$dc_id'";
      if ($conn->query($sql) === TRUE) {
         echo json_encode("OK");
      } else {

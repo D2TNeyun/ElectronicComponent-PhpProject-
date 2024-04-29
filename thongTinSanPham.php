@@ -5,20 +5,6 @@
   include('./admin/format.php');
 
 ?>  
-<style>
-  .productContainer {
-    width:100%;
-    padding-right:15px;
-    padding-left:15px;
-    margin-right:auto;
-    margin-left:auto;
-    background-color: #f5fff0;
-  }
-.cardHolder:hover{
-    padding: 3%;
-
-}
-</style>  
 <div class="productContainer">
     <div class="row">
         <div class="container mt-5"> <!-- Start All Products -->
@@ -76,7 +62,7 @@
         <hr class="featurette-divider">
         <h6>SẢN PHẨM LIÊN QUAN</h6>
     </div>  
-    <div class="row container mt-4" style="background: #f5fff0; margin-left: 20%;">
+    <div class="row container mt-4" style="background: #f5fff0; margin: auto;" >
         <?php
             $sp_id = $_GET['sp_id'];
             $sql = "SELECT * FROM sanpham WHERE dm_id = (SELECT dm_id FROM sanpham WHERE sp_id = '$sp_id')";
@@ -85,7 +71,7 @@
                 while($row = $result->fetch_assoc()){
                 $sp_id = $row['sp_id'];
                 echo ' 
-                    <div class="col-sm-2 mb-2">
+                    <div class="col">
                     <a href="thongTinSanPham.php?sp_id='.$sp_id.'" class="btn" style="text-align: left; padding:0px;">
                     <div class="card cardHolder">
                         <img src="'.str_replace('..', '.', $row['sp_hinhAnh']).'" class="card-img-top" alt="image" />
@@ -109,3 +95,25 @@
   // Footer Include from mainInclude 
   include('./mainInclude/footer.php'); 
 ?>  
+
+<style>
+  .productContainer {
+    width:100%;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: #f5fff0;
+  }
+.cardHolder:hover{
+    padding: 3%;
+
+}
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .card-img-top{
+    width: 75%;
+    padding-top: 75%;
+  }
+
+}
+</style>  

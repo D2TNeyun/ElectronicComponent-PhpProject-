@@ -109,7 +109,7 @@
                                            
                                             break;
                                         case '2':
-                                            $txtMess = "Thanh toán qua thẻ ATM";
+                                            $txtMess = "Thanh toán qua thẻ ATM MOMO";
                                             $amount_order = $orderInfor[0]['tongtien'];
                                             header("Location: congthanhtoan.php?amount=$amount_order");
                                             break;

@@ -31,6 +31,7 @@ SESSION_start();
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- Scripts  -->
+    <link rel="icon" type="image/png" href="image/logo.png">
     <title> Sáng Tạo Điện Tử</title>
 
 </head>
