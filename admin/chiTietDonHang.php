@@ -1,15 +1,14 @@
-<?php 
-if(!isset($_SESSION)){
+<?php
+if (!isset($_SESSION)) {
     session_start();
 }
-include('../admin/admininclude/header.php');
-include('../dbConnection.php');
-include('../admin/format.php');
+include ('../admin/admininclude/header.php');
+include ('../dbConnection.php');
+include ('../admin/format.php');
 
-if(isset($_SESSION['is_admin_login'])){
+if (isset($_SESSION['is_admin_login'])) {
     $adminEmail = $_SESSION['adminLogEmail'];
-}
-else {
+} else {
     echo "<script>location.href='../index.php';</script>";
 }
 
@@ -140,6 +139,6 @@ else {
 </div>
 </div>
 
-<?php 
-include('../admin/admininclude/footer.php');
+<?php
+include ('../admin/admininclude/footer.php');
 ?>
