@@ -89,8 +89,8 @@ else {
                     echo "Đang vận chuyển";
                 } else if ($row['tt_id'] == 4) {
                     echo "Đã giao hàng";
-                } else {
-                    echo "Đã xác nhận";
+                }else if ($row['tt_id'] == 5) {
+                    echo "Đã Hủy";
                 }
             } ?>" readonly>
         </div>
